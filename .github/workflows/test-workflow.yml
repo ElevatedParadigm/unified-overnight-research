@@ -1,0 +1,109 @@
+name: Overnight Research Loop Test Workflow
+
+on:
+  # Allow manual trigger from GitHub UI
+  workflow_dispatch:
+    inputs:
+      test_type:
+        description: 'Type of overnight test to run'
+        required: true
+        default: 'full'
+        type: choice
+        options:
+          - 'quick'      # Quick validation check
+          - 'full'      # Complete overnight loop (default)
+          - 'components' # Component-by-component testing
+
+jobs:
+  test-loop:
+    name: Test Overnight Research Loop
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+      
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      
+      - name: Install Dependencies
+        run: |
+          pip install -r requirements.txt --quiet
+      
+      - name: Run Quick Validation (if quick test)
+        if: ${{ github.event.inputs.test_type == 'quick' }}
+        run: |
+          echo "Running quick validation checks..."
+          python3 composer.py --config config.yaml --quick-check
+      
+      - name: Run Component Tests (if components test)
+        if: ${{ github.event.inputs.test_type == 'components' }}
+        run: |
+          echo "Running component-by-component tests..."
+          python3 composer.py --config config.yaml --component-test
+      
+      - name: Run Full Overnight Loop (if full test)
+        if: ${{ github.event.inputs.test_type == 'full' || (github.event.inputs.test_type == '' && github.event_name == 'workflow_dispatch') }}
+        run: |
+          echo "Running complete overnight research loop..."
+          python3 composer.py --config config.yaml
+      
+      - name: Generate Status Report
+        run: |
+          if [ -f logs/status_report.txt ]; then
+            cat logs/status_report.txt
+          else
+            echo "Status report not generated yet."
+          fi
+      
+      - name: Upload Logs
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: overnight-research-logs
+          path: |
+            logs/
+            domain/
+            database/
+      
+      - name: Generate Summary
+        run: |
+          echo "📊 Overnight Research Loop Test Summary" > summary.md
+          echo "================================================" >> summary.md
+          echo "Test completed at: $(date -Iseconds)" >> summary.md
+          echo "" >> summary.md
+          
+          if [ -f logs/status_report.txt ]; then
+            echo "### Status Report:" >> summary.md
+            echo "```" >> summary.md
+            cat logs/status_report.txt | head -20 >> summary.md
+            echo "```" >> summary.md
+          fi
+          
+          echo "" >> summary.md
+          echo "### Next Steps:" >> summary.md
+          echo "- Review generated reports in \`reports/\` directory" >> summary.md
+          echo "- Check database for new observations" >> summary.md
+          echo "- Inspect logs for any errors or warnings" >> summary.md
+          
+          cat summary.md
+      
+      - name: Create Pull Request Summary (if tests pass)
+        run: |
+          if [ -f status_report.txt ] && grep -q "Status: PASSING\|Status: VALIDATING\|Status: INCOMPLETE" status_report.txt 2>/dev/null; then
+            echo "✅ Overnight research loop completed successfully!" > pr_summary.md
+            echo "" >> pr_summary.md
+            echo "Generated reports:" >> pr_summary.md
+            if [ -f reports/ ]; then
+              ls -1 reports/ >> pr_summary.md || true
+            fi
+            echo "" >> pr_summary.md
+            echo "Next run: Configure cron or schedule manual trigger" >> pr_summary.md
+            
+            # Create pull request with test results (optional)
+            # gh pr create --title "Overnight Research Loop Test Complete" --body-file pr_summary.md
+          else
+            echo "⚠️  Overnight research loop may have issues. Review logs in \`logs/\` directory." > pr_summary.md
+          fi
