@@ -1,0 +1,28 @@
+{
+  "version": "4.0",
+  "symbols": {
+    "124": {"name": "Universal Bridge / Threshold", "keys": ["geopolitics", "bridge", "threshold"], "weight": 0.95, "domains": ["political", "religious", "economic", "military", "elemental"]},
+    "666": {"name": "Completion → 9 / Political Cycles", "keys": ["cycles", "completion", "political"], "weight": 0.85, "domains": ["political", "religious", "elemental"]},
+    "963": {"name": "Political Communication", "keys": ["communication", "political", "speech"], "weight": 0.75, "domains": ["political", "military"]},
+    "279": {"name": "Cycle Turning", "keys": ["turning", "cycles", "transition"], "weight": 0.75, "domains": ["political", "elemental"]},
+    "55": {"name": "International Diplomacy", "keys": ["diplomacy", "international", "peace"], "weight": 0.80, "domains": ["political", "religious", "economic"]},
+    "111": {"name": "Activation Initiation", "keys": ["activation", "initiation", "beginning"], "weight": 0.70, "domains": ["political", "elemental"]}
+  },
+  "elemental_forces": ["fire", "volcano", "frequency", "resonance"],
+  "domains": ["political", "religious", "economic", "military", "elemental"],
+  "database_history": [],
+  "confidence_scores": {
+    "124_bridge_analysis": 0.95,
+    "666_cycle_analysis": 0.85,
+    "963_communication_patterns": 0.75,
+    "55_diplomacy_networks": 0.80,
+    "111_activation_events": 0.70,
+    "279_transition_cycles": 0.75
+  },
+  "relationships": {},
+  "hidden_layering": {
+    "enabled": true,
+    "depths": [1, 2, 3],
+    "convergence_patterns": []
+  }
+}

@@ -1,0 +1,7 @@
+timestamp,cycle_number,items_processed,primary_symbol,confidence_score,hidden_layering_depth,new_findings_count,feedback_integration_enabled
+2026-04-29T14:30:00Z,1,30,124,0.95,"[1,2,3]",18,true
+2026-04-29T14:30:00Z,1,30,666,0.85,"[1,2,3]",12,true
+2026-04-29T14:30:00Z,1,30,963,0.75,"[1,2,3]",8,true
+2026-04-29T14:30:00Z,1,30,55,0.80,"[1,2,3]",10,true
+2026-04-29T14:30:00Z,1,30,111,0.70,"[1,2,3]",6,true
+2026-04-29T14:30:00Z,1,30,279,0.75,"[1,2,3]",8,true

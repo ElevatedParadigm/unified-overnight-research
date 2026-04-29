@@ -1,0 +1,50 @@
+        # Generate comprehensive report
+        self._generate_comprehensive_report(
+            queries, all_results, all_relationships, 
+            converged_concepts, temporal_data, config, heatmap
+        )
+        
+        # Save metadata
+        self.execution_stats["end_time"] = datetime.now().isoformat()
+        self.execution_stats["total_execution_time_seconds"] = len(all_results)  # Simplified
+        
+        with open(self.metadata_path, 'w') as f:
+            json.dump(self.execution_stats, f, indent=2)
+        
+        print(f"\n✅ Overnight research completed successfully!")
+        print(f"📄 Check the latest report:")
+        print(f"   {self.report_path}")
+        print("=" * 70 + "\n")
+    
+    def _generate_comprehensive_report(self, queries: List[str], results: List[Dict], 
+                                      relationships: List[Dict], converged_concepts: List[Dict],
+                                      temporal_data: Dict, config: Dict, heatmap: str):
+        """Generate comprehensive markdown report with all analysis"""
+        
+        # Count symbol occurrences in results
+        symbol_mentions = {}
+        for query_result in results:
+            try:
+                query = query_result.get("query", "")
+                parsed = query_result.get("results", [])
+                
+                if "124" in query or "0 to" in query.lower():
+                    symbol_mentions["124"] = symbol_mentions.get("124", 0) + len(parsed)
+                elif "963" in query:
+                    symbol_mentions["963"] = symbol_mentions.get("963", 0) + len(parsed)
+                elif "55" in query:
+                    symbol_mentions["55"] = symbol_mentions.get("55", 0) + len(parsed)
+            except:
+                pass
+        
+        with open(self.report_path, 'w') as f:
+            report_lines = [
+                f"# 📊 Overnight Research Report - {datetime.now().strftime('%Y-%m-%d %H:%M')}\n\n",
+                "## 🎯 Executive Summary\n\n",
+                f"- **Symbols Processed**: {len(config.get('symbols', []))}\n",
+                f"- **Queries Executed**: {len(queries)}\n",
+                f"- **Successful Queries**: {len([r for r in results if r.get('status')=='success'])}\n",
+                f"- **Cross-Domain Signals**: {len(converged_concepts)}\n",
+                f"- **New Relationships**: {len(relationships)}\n\n",
+                "## 🔍 Query Results & Discovery Summary\n\n"
+            ]

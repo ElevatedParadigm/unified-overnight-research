@@ -1,0 +1,303 @@
+[
+  {
+    "id": "QR-001",
+    "topic": "Universal Bridge Geopolitical Threshold Patterns",
+    "search_term": "Universal Bridge / Geopolitics",
+    "symbol_id": 124,
+    "confidence": 0.92,
+    "domains": ["political", "geopolitical"],
+    "elemental_forces": ["fire", "frequency"],
+    "priority": 1.0
+  },
+  {
+    "id": "QR-002",
+    "topic": "International Diplomacy Cross-Border Negotiation Frameworks",
+    "search_term": "International Diplomacy",
+    "symbol_id": 55,
+    "confidence": 0.85,
+    "domains": ["political", "economic"],
+    "elemental_forces": ["frequency", "resonance"],
+    "priority": 0.65
+  },
+  {
+    "id": "QR-003",
+    "topic": "Political Communication Directive Transmission Systems",
+    "search_term": "Political Communication Channel",
+    "symbol_id": 963,
+    "confidence": 0.75,
+    "domains": ["political", "military"],
+    "elemental_forces": ["frequency", "resonance"],
+    "priority": 0.45
+  },
+  {
+    "id": "QR-004",
+    "topic": "Completion Cycles Through Political Transformation (9-Layer Structure)",
+    "search_term": "completion cycle political transformation",
+    "symbol_id": 666,
+    "confidence": 0.88,
+    "domains": ["political", "religious"],
+    "elemental_forces": ["fire", "frequency"],
+    "priority": 1.0
+  },
+  {
+    "id": "QR-005",
+    "topic": "Activation Initiation Universal Mechanism Patterns",
+    "search_term": "activation initiation universal mechanism",
+    "symbol_id": 111,
+    "confidence": 0.89,
+    "domains": ["all"],
+    "elemental_forces": ["frequency", "lightning"],
+    "priority": 0.95
+  },
+  {
+    "id": "QR-006",
+    "topic": "Cycle Turning Variant Alternative Pathway Structures",
+    "search_term": "cycle turning variant pathway",
+    "symbol_id": 279,
+    "confidence": 0.72,
+    "domains": ["political", "economic"],
+    "elemental_forces": ["frequency", "fire"],
+    "priority": 0.55
+  },
+  {
+    "id": "QR-007",
+    "topic": "Bridge Threshold Geopolitical Transition Events",
+    "search_term": "threshold transition geopolitical events",
+    "symbol_id": 124,
+    "confidence": 0.90,
+    "domains": ["geopolitical", "military"],
+    "elemental_forces": ["fire", "volcano"],
+    "priority": 1.0
+  },
+  {
+    "id": "QR-008",
+    "topic": "Volcano Force Pressure Release Geopolitical Shocks",
+    "search_term": "volcano pressure release geopolitical",
+    "symbol_id": 124,
+    "confidence": 0.87,
+    "domains": ["geopolitical", "military"],
+    "elemental_forces": ["volcano", "fire"],
+    "priority": 0.85
+  },
+  {
+    "id": "QR-009",
+    "topic": "Cross-Domain Movement Through Universal Thresholds",
+    "search_term": "cross-domain movement universal threshold",
+    "symbol_id": 124,
+    "confidence": 0.88,
+    "domains": ["all"],
+    "elemental_forces": ["frequency", "resonance"],
+    "priority": 0.95
+  },
+  {
+    "id": "QR-010",
+    "topic": "Frequency-Based Diplomatic Communication Protocols",
+    "search_term": "frequency diplomatic communication protocol",
+    "symbol_id": 55,
+    "confidence": 0.86,
+    "domains": ["political", "diplomatic"],
+    "elemental_forces": ["frequency", "resonance"],
+    "priority": 0.75
+  },
+  {
+    "id": "QR-011",
+    "topic": "Resonance Harmonic Synchronization International Relations",
+    "search_term": "resonance harmonic international relations",
+    "symbol_id": 55,
+    "confidence": 0.84,
+    "domains": ["diplomatic", "political"],
+    "elemental_forces": ["resonance"],
+    "priority": 0.72
+  },
+  {
+    "id": "QR-012",
+    "topic": "Nine-Layer Completion Pattern Political Transformation",
+    "search_term": "nine layer completion political transformation",
+    "symbol_id": 666,
+    "confidence": 0.87,
+    "domains": ["political", "religious"],
+    "elemental_forces": ["fire", "frequency"],
+    "priority": 1.0
+  },
+  {
+    "id": "QR-013",
+    "topic": "Lightning Force Instantaneous Activation Mechanisms",
+    "search_term": "lightning force activation mechanism",
+    "symbol_id": 111,
+    "confidence": 0.88,
+    "domains": ["all"],
+    "elemental_forces": ["lightning", "frequency"],
+    "priority": 0.92
+  },
+  {
+    "id": "QR-014",
+    "topic": "Fire Force Transformation At Universal Thresholds",
+    "search_term": "fire force transformation threshold",
+    "symbol_id": 124,
+    "confidence": 0.87,
+    "domains": ["political", "geopolitical"],
+    "elemental_forces": ["fire"],
+    "priority": 0.88
+  },
+  {
+    "id": "QR-015",
+    "topic": "Message Transmission Through Political Communication Channels",
+    "search_term": "message transmission political communication channel",
+    "symbol_id": 963,
+    "confidence": 0.78,
+    "domains": ["political", "military"],
+    "elemental_forces": ["frequency"],
+    "priority": 0.62
+  },
+  {
+    "id": "QR-016",
+    "topic": "Alternative Cycle Variant Pathways Economic Transformation",
+    "search_term": "alternative cycle variant economic transformation",
+    "symbol_id": 279,
+    "confidence": 0.75,
+    "domains": ["economic", "political"],
+    "elemental_forces": ["frequency", "fire"],
+    "priority": 0.68
+  },
+  {
+    "id": "QR-017",
+    "topic": "Symbolic Convergence Patterns Deeper Level Analysis (All Symbols)",
+    "search_term": "symbolic convergence deeper level",
+    "symbol_id": ["124", "55", "963", "111", "279", "666"],
+    "confidence": 0.82,
+    "domains": ["all"],
+    "elemental_forces": ["all"],
+    "priority": 1.0,
+    "hidden_layering_enabled": true
+  },
+  {
+    "id": "QR-018",
+    "topic": "Cross-Reference Base-Layer Patterns Universal Bridge Integration",
+    "search_term": "cross-reference base-layer universal bridge",
+    "symbol_id": 124,
+    "confidence": 0.91,
+    "domains": ["all"],
+    "elemental_forces": ["frequency", "resonance"],
+    "priority": 0.98
+  },
+  {
+    "id": "QR-019",
+    "topic": "Hidden Layering Detection Political Domain Patterns",
+    "search_term": "hidden layering detection political patterns",
+    "symbol_id": ["124", "666", "963"],
+    "confidence": 0.85,
+    "domains": ["political"],
+    "elemental_forces": ["fire", "frequency", "resonance"],
+    "priority": 0.88
+  },
+  {
+    "id": "QR-020",
+    "topic": "Continuing Knowledge Feedback Loop Integration Cycle 1",
+    "search_term": "knowledge feedback loop integration",
+    "symbol_id": ["all"],
+    "confidence": 0.90,
+    "domains": ["all"],
+    "elemental_forces": ["all"],
+    "priority": 1.0
+  },
+  {
+    "id": "QR-021",
+    "topic": "Religious Domain Trinity Completion Pattern Analysis",
+    "search_term": "trinity completion religious pattern",
+    "symbol_id": [666, 124],
+    "confidence": 0.84,
+    "domains": ["religious"],
+    "elemental_forces": ["fire"],
+    "priority": 0.78
+  },
+  {
+    "id": "QR-022",
+    "topic": "Military Domain Command Communication Network Structures",
+    "search_term": "military command communication network",
+    "symbol_id": [963, 124],
+    "confidence": 0.82,
+    "domains": ["military"],
+    "elemental_forces": ["frequency", "resonance"],
+    "priority": 0.75
+  },
+  {
+    "id": "QR-023",
+    "topic": "Economic Domain International Trade Bridge Patterns",
+    "search_term": "economic international trade bridge pattern",
+    "symbol_id": [124, 55],
+    "confidence": 0.83,
+    "domains": ["economic"],
+    "elemental_forces": ["frequency", "resonance"],
+    "priority": 0.76
+  },
+  {
+    "id": "QR-024",
+    "topic": "Elemental Force Convergence Across All Domains",
+    "search_term": "elemental force convergence all domains",
+    "symbol_id": ["all"],
+    "confidence": 0.86,
+    "domains": ["elemental"],
+    "elemental_forces": ["fire", "volcano", "frequency", "resonance", "lightning"],
+    "priority": 0.92
+  },
+  {
+    "id": "QR-025",
+    "topic": "Fire-Volcano Frequency Resonance Lightning Force Matrix Analysis",
+    "search_term": "fire volcano frequency resonance lightning matrix",
+    "symbol_id": ["all"],
+    "confidence": 0.87,
+    "domains": ["elemental"],
+    "elemental_forces": ["all"],
+    "priority": 0.95
+  },
+  {
+    "id": "QR-026",
+    "topic": "Primary Key Symbol 124 Discovery Expansion Search",
+    "search_term": "Universal Bridge Geopolitics expansion discovery",
+    "symbol_id": 124,
+    "confidence": 0.93,
+    "domains": ["political", "geopolitical"],
+    "elemental_forces": ["fire", "frequency"],
+    "priority": 1.0
+  },
+  {
+    "id": "QR-027",
+    "topic": "Moderate Key Symbol 55 Diplomacy Integration Patterns",
+    "search_term": "International Diplomacy integration pattern",
+    "symbol_id": 55,
+    "confidence": 0.86,
+    "domains": ["political", "economic"],
+    "elemental_forces": ["frequency", "resonance"],
+    "priority": 0.72
+  },
+  {
+    "id": "QR-028",
+    "topic": "Average Key Symbol 963 Communication Network Analysis",
+    "search_term": "Political Communication network analysis",
+    "symbol_id": 963,
+    "confidence": 0.76,
+    "domains": ["political", "military"],
+    "elemental_forces": ["frequency"],
+    "priority": 0.58
+  },
+  {
+    "id": "QR-029",
+    "topic": "Hidden Layering Symbols 111-279-666 Deep Integration",
+    "search_term": "hidden layering deep integration",
+    "symbol_id": ["111", "279", "666"],
+    "confidence": 0.84,
+    "domains": ["all"],
+    "elemental_forces": ["frequency", "fire", "lightning"],
+    "priority": 0.87
+  },
+  {
+    "id": "QR-030",
+    "topic": "Cycle Synthesis: Bridge-Communication-Completion Integration Chain",
+    "search_term": "bridge communication completion integration chain",
+    "symbol_id": [124, 963, 666],
+    "confidence": 0.85,
+    "domains": ["all"],
+    "elemental_forces": ["fire", "frequency", "resonance"],
+    "priority": 0.96
+  }
+]
