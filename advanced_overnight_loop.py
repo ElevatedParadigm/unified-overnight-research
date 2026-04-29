@@ -511,8 +511,9 @@ layering_depths: {[str(d) for d in self.layering_depths if d > 1]}
     
     def generate_cross_reference_index(self, results: Dict[str, Any]) -> str:
         """Generate cross-reference index markdown report."""
-        extracted = self.extract_core_symbols(str(results))
+        symbol_results = results.get("symbols_found", {})
         
+        # Handle list format from extract_core_symbols if present
         lines = [
             "",
             "### Cross-Reference Index",
@@ -521,9 +522,8 @@ layering_depths: {[str(d) for d in self.layering_depths if d > 1]}
             "|--------|---------|-----------------|------------------|-----------------|"
         ]
         
-        symbol_results = results.get("symbols_found", {})
-        
-        for symbol, match_data in extracted.items():
+        # Iterate over symbol_results dict which has the right format
+        for symbol, match_data in symbol_results.items():
             if symbol in CORE_SYMBOLS:
                 meta = CORE_SYMBOLS[symbol]
                 relevance = min(0.95, 0.7 + len(str(match_data)) / 100)
