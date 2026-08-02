@@ -56,6 +56,19 @@ Edit `composer.py` or create a `config.yaml` in the root directory to customize:
 3. **STATUS_REPORT.md** - Detailed operational status
 4. **GEMATRIA_UNIFIED_OVERNIGHT.md** - Gematria-specific overnight analysis
 
+## Related Repositories
+
+This repo is part of the [ElevatedParadigm](https://github.com/ElevatedParadigm) research ecosystem. Companion repositories:
+
+| Repo | Purpose |
+|------|---------|
+| [steves-gematria](https://github.com/ElevatedParadigm/steves-gematria) | **Canonical** — core database, visual archive, Firecrawl integration, and primary overnight research implementation |
+| [gourmet-research-public](https://github.com/ElevatedParadigm/gourmet-research-public) | Public research outputs, predictions, and convergence analysis |
+| [gematria-unified-overnight-research](https://github.com/ElevatedParadigm/gematria-unified-overnight-research) | Standalone unified overnight research orchestrator |
+| [gematria-visual-archive](https://github.com/ElevatedParadigm/gematria-visual-archive) | Visual archive prototype for symbol galleries and heatmaps |
+
+**Ownership note:** This repo is an alternate overnight research implementation. The canonical home for overnight research, the core database, and visual archive is [`steves-gematria`](https://github.com/ElevatedParadigm/steves-gematria). Contributions should target that repo unless this standalone variant has a specific advantage for your use case.
+
 ## Key Components
 
 - **composer.py**: Main entry point for orchestrating overnight research
